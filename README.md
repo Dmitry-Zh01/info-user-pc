@@ -6,11 +6,11 @@ This repository includes a PowerShell + Windows Forms script concerned with gett
 1. Firstly, it is necessary to prepare the script execution.
 You can create a new notepad file, which will be saved as .bat and consist of the following:
 
-_@echo off
+_@echo off_
 
-powershell -executionpolicy RemoteSigned -file "**file location**"
+_powershell -executionpolicy RemoteSigned -file "**file location**"_
 
-timeout /t 0 /nobreak_
+_timeout /t 0 /nobreak__
 
 2. Secondly, you shall be awared that additional utilities have been installed: 
 - PSExec
