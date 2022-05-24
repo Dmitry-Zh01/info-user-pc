@@ -18,7 +18,7 @@ _timeout /t 0 /nobreak_
 
 3. Thirdly, it is necessary to change domain name in 334 line:
 
-$username = $users1 -replace "**DOMAIN**\W"
+_$username = $users1 -replace "**DOMAIN**\W"_
 
 4. Finally, the script should be launched (from .bat file) via administrator credentials.
 
