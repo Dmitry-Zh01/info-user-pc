@@ -16,7 +16,7 @@ _timeout /t 0 /nobreak_
 - PSExec
 - PSService
 
-3. Thirdly, it is necessary to change domain name in 334 line:
+3. Thirdly, it is necessary to change domain name in 333 line:
 
 _$username = $users1 -replace "**DOMAIN**\W"_
 
