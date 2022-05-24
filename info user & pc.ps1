@@ -5,7 +5,6 @@ import-module activedirectory                               # Модуль AD
 Add-Type -assembly System.Windows.Forms                     # Включение Windows Forms
 Add-Type -AssemblyName System.Drawing                       # Включение Drawing
 
-
 # Объявление форм
 
 ## Текстовые поля
@@ -331,7 +330,7 @@ $Computer_info = get-adcomputer $Computer_name -properties *
 # Информация о залогиненных пользователях
     $Users = Get-WmiObject win32_computersystem -Property UserName -ComputerName $Computer_name
     $users1 = @($users).username 
-    $username = $users1 -replace "CWWPVT\W"  # Здесь вместо CWWPVT указываем домен пользователя
+    $username = $users1 -replace "DOMAIN\W"  # Здесь вместо DOMAIN указываем домен пользователя
 
 # Информация о производителе и серийный номер компьютера
    $Serial_pc = Get-WmiObject -ComputerName $Computer_name -Class Win32_BIOS | Select-Object Manufacturer, SerialNumber
