@@ -10,7 +10,7 @@ _@echo off_
 
 _powershell -executionpolicy RemoteSigned -file "**file location**"_
 
-_timeout /t 0 /nobreak__
+_timeout /t 0 /nobreak_
 
 2. Secondly, you shall be awared that additional utilities have been installed: 
 - PSExec
