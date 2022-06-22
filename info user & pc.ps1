@@ -330,7 +330,7 @@ $Computer_info = get-adcomputer $Computer_name -properties *
 # Информация о залогиненных пользователях
     $Users = Get-WmiObject win32_computersystem -Property UserName -ComputerName $Computer_name
     $users1 = @($users).username 
-    $username = $users1 -replace "DOMAIN\W"  # Здесь вместо DOMAIN указываем домен пользователя
+    $username = $users1.Split("\")[1]
 
 # Информация о производителе и серийный номер компьютера
    $Serial_pc = Get-WmiObject -ComputerName $Computer_name -Class Win32_BIOS | Select-Object Manufacturer, SerialNumber
