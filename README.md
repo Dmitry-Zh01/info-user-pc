@@ -16,10 +16,6 @@ _timeout /t 0 /nobreak_
 - PSExec
 - PSService
 
-3. Thirdly, it is necessary to change domain name in 333 line:
-
-_$username = $users1 -replace "**DOMAIN**\W"_
-
 4. Finally, the script should be launched (from .bat file) via administrator credentials.
 
 Good luck, have a nice day!
