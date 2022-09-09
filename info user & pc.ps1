@@ -1,3 +1,4 @@
+# Dmitry Zhdanov
 #set-executionpolicy remotesigned
 
 import-module activedirectory                               # Модуль AD
