@@ -19,3 +19,5 @@ _timeout /t 0 /nobreak_
 4. Finally, the script should be launched (from .bat file) via administrator credentials.
 
 Good luck, have a nice day!
+
+![ps](https://user-images.githubusercontent.com/106164393/196054750-d36887c0-3837-43c1-8159-88d8730b6b80.PNG)
